@@ -1,0 +1,112 @@
+.history_order_desktop{
+    height: 100vh;
+    background-color: $c1;
+    overflow: auto;
+}
+
+.history_order_container{
+    background-color: $c1;;
+    // height: calc(100vh);
+
+    .calendar{
+        .standing_button{
+            button{
+                border: none;
+                background-color: white;
+                width: 190px;
+                height: 40px;
+                border-radius: 20px;
+                margin: 40px;
+                font-size: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(107, 161, 241);
+                    color: white;
+                }
+            }
+        }
+
+        .table_calender{
+            position: absolute;
+
+        }
+    }
+}
+
+.accordion_container{
+    width: 70%;
+    margin: auto;
+    .card_accordion{
+        margin-top: 10px;
+    }
+    
+}
+.history_order_conts{
+    // overflow: auto;
+    height: 80%;
+    // margin-top: 150px;
+    .history_order_conts_card{
+        cursor: pointer;
+        width: 80%;
+        border-radius: 100px;
+        background-color: white;
+        margin-top: 50px;
+        margin-right: 100px;
+        height: 160px;
+    }
+
+    .history_order_date{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .history_order_prods{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        .swiper_cont{
+            width: 100%;
+            .card_prod{
+                text-align: center;
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    .restore_history_order{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(124, 117, 231);
+            border-radius: 50%;
+            cursor: pointer;
+            img{
+                width: 45px;
+                height: 45px;
+                &:hover{
+                    transform: rotate(360deg);
+                    transition-duration: 500ms;
+                }
+            }
+        }
+        
+    }
+}

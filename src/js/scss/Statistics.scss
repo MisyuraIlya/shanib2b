@@ -1,0 +1,21 @@
+.statss{
+    background-color: $c1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        border-radius: 50px;
+        width: 70%;
+        height: 60%;
+        background-color: white;
+    }
+
+    &__body{
+        height: 200px;
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,256 @@
+.fault_page_main{
+    height: 100vh; 
+    background-color: $c1;
+    overflow: auto;
+}
+ .fault_page_container{
+    background-color: $c1;
+    // height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .fault_card_container{
+        
+        border-radius: 100px;
+        height: 100% ;
+        width: 80%;
+        background-color: white;
+        margin: 170px auto;
+        .selection_card{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+        }
+        select {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border: none;
+            background-color: $c1;
+            height: 50px;
+            padding: 10px;
+            border-radius: 40px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 5px;
+            
+            font-size: 18px;
+            option {
+                border: none;
+                padding: 100px;
+                margin: 100px;
+
+            }
+
+            
+        }
+    
+        h2{
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .fault_machine{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .card_machine{
+                text-align: center;
+                margin:  20px;
+                .circle_img_machine{
+                    width: 80px;
+                    height: 80px;
+                    background-color: $c3;
+                    border-radius: 50%;
+                    margin: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $c2;
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                }
+
+                .circle_img_machine_active{
+                    width: 80px;
+                    height: 80px;
+                    background-color: $c2;
+                    border-radius: 50%;
+                    margin: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                }
+                
+            }
+
+
+            
+        }
+
+        .problem_form{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+            font-size: 18px;
+
+                border: none;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+                opacity: 0.9;
+                width: 40%;
+            }
+        }
+
+        .send_buttons{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            margin: 50px;
+
+            .circle_button{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                background-color: rgb(171, 234, 245);
+                border-radius: 50%;
+                cursor: pointer;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+
+            .circle_button_critical{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                border-radius: 50%;
+                cursor: pointer;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .send_video{
+                margin: 50px;
+            }
+            
+            .critiecal_fault{
+                margin: 50px;
+            }
+        }
+
+        .send_form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px auto;
+            margin-bottom: 50px;
+            button{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: $c2;
+                color: white;
+                border: none;
+                width: 300px;
+                height: 50px;
+                border-radius: 50px;
+                font-size: 25px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(109, 107, 233);
+                }
+                }
+        }
+
+        .uploaded{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            
+            .upload_file_card{
+                width: 200px;
+                height: 200px;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                margin: 20px;
+                button{
+                    border: none;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: rgb(227, 118, 118);
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 900;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(236, 75, 75);
+                    }
+                }
+            }
+        }
+    }
+ }
+ 
+
+ .circle_button{
+
+	overflow:hidden;
+	position:relative;
+}
+.circle_button input{
+	position:absolute;
+	height:400px;
+	width:400px;
+	left:-200px;
+	top:-200px;
+	background:transparent;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);  
+    cursor: pointer;
+}
+.circle_button img{
+    cursor: pointer;
+}

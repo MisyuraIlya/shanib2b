@@ -1,0 +1,48 @@
+.side_header_container{
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+}
+
+.side_header_categories{
+    li{
+        font-size: 22px;
+        margin-top: 40px;
+        margin-right: 90px;
+        cursor: pointer;
+        color: rgb(54, 52, 52);
+            
+    }
+
+    .active_header{
+        color: black;
+        font-weight: 700;
+    }
+    .active_header:before{
+        position: absolute;
+        right: 50px;
+        background-color: $c2;
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    // li:before { /* the custom styled bullets */
+    //     background-color: #8262da;
+    //     border-radius: 50%;
+    //     content: "";
+    //     display: inline-block;
+    //     margin-top: 5px;
+    //     margin-left: 10px;
+    //     height: 20px;
+    //     width: 20px;
+    //   }
+    li:hover{
+        color: red;
+    }
+}

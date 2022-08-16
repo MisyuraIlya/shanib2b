@@ -1,0 +1,1 @@
+export const globalFileServer = 'https://shanishenhav.online/src/img/';
